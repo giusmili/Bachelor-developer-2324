@@ -21,4 +21,29 @@ document.addEventListener("DOMContentLoaded", e => {
     nombre === x ? console.log(true) : console.log(false);
     console.table(table);
     console.log(speack.split(""));
+
+    //tableaux
+
+    table = ["html", 1984, false];
+
+    table.push(nombre); //ajouter en fin de tableau un élément
+    console.log(table.length);
+    table.pop(nombre);
+    table.unshift(nombre); //ajouter en début de tableau un élément
+    table.shift(nombre); //supprimer en début de tableau un élément
+    console.log(table);
+
+    const user = {
+        nom: "Javascript",
+        version: "ES6"
+        // Object.keys(persons) ou Object.value(persons)
+    };console.table(Object.keys(user));
+
+    for (let index in user) {
+        let values = user[index];
+        console.log(`${index} : ${values}\n`);
+    }
+    let nom = "javascrpt html css";
+    const printouts = nom.split(" "); //diviser la chaine
+    console.table(printouts);
 });
