@@ -1,4 +1,7 @@
+import { msg } from "./app_data.js";
+msg(document.querySelector("title"));
 document.addEventListener("DOMContentLoaded", e => {
+
     //console.dir(document.children)
 
     const version = Number(14); //type number
