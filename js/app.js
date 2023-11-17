@@ -7,6 +7,7 @@ import { NowDate } from "./app_data.js";
 /* chargement du dom */
 document.addEventListener("DOMContentLoaded", e => {
     //console.dir(document.children)
+
     msg(document.querySelector("title"));
     let bool = true; //type float
     let double = 1.5; //type number
